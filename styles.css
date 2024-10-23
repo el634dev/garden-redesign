@@ -1,0 +1,97 @@
+:root {
+   --default-font: 1rem;
+   --paragraph-font: 1.063rem;
+   --heading-size: 1.8rem;
+}
+
+* {
+    color: #000000;
+}
+
+body {
+    font-family: Helvetica, sans-serif, serif, system-ui;
+    font-weight: 400;
+    padding: 0rem;
+    margin: 0rem;
+    overflow-x: hidden;
+    width: 400vwh;
+    background-image:url('https://plus.unsplash.com/premium_photo-1723485715915-1147c001300a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGllJTIwZGllfGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 29px;
+    flex-direction: row;
+    padding: 1.25rem 0px 3.375rem 0px;
+    height: 3.75rem;
+}
+
+header h1 {
+    margin-right: 20px;
+}
+
+.summary {
+    font-size: var(--paragraph-font);
+    width: 900px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+/* Road to Enlightenment, So What is This About? Sections */
+.preamble,
+.explanation,
+.participation,
+.benefits, .requirements {
+    padding: 1.25rem;
+}
+
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3, .requirements h3 {
+    font-size: var(--heading-size);
+}
+
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p, .requirements p {
+    font-size: var(--paragraph-font);
+    text-align: left;
+    width: 940px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 60.4rem;
+    height: 100%;
+    width: 300px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.60;
+    background-color: #fff;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+} 
+
+footer a {
+    text-decoration: none;
+}
