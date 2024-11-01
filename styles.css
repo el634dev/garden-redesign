@@ -16,8 +16,9 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', Helvetica, sans-serif, serif;
-    line-height: 1.45;
+    line-height: 1.46;
     font-size: var(--default-font);
+    overflow-x: hidden;
     background-image:url('https://plus.unsplash.com/premium_photo-1723485715915-1147c001300a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGllJTIwZGllfGVufDB8fDB8fHww');
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,6 +135,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: rgb(117, 117, 218);
 }
 
 /* Styling the footer */
@@ -141,11 +143,12 @@ footer {
     margin-top: 20px;
     width: 100%;
     margin-left: 400px;
-} 
 
-footer a {
-    border-radius: 10px;
-    border: 1px solid #ffa500;
-    background-color:#ffa500;
-    padding: 0.40rem;
+    & a {
+        border-radius: 10px;
+        border: 1px solid #ffa500;
+        background-color:#ffa500;
+        box-shadow: -2px 2px 0 #222, -2px 2px 0 #222;
+        padding: 0.40rem;
+    }
 }
